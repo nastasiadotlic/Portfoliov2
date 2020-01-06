@@ -1,6 +1,16 @@
-var nav = document.getElementById('nav');
-var open = document.getElementById('open');
+/*var nav = document.getElementById("nav");
+console.log(nav);*/
 
-open.addEventListener('click', function() {
-  nav.classList.toggle('is-open');
-});
+/*
+PARALLAX
+*/
+
+const Rellax = require('rellax');
+var rellax = new Rellax('.title__container');
+var rellax = new Rellax('.homepage__subtitle');
+
+/*
+SCROLL
+*/
+
+//faire dispoaraitre le scroll

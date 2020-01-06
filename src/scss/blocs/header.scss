@@ -3,7 +3,7 @@
   background-color: $secondary-color;
   display: flex;
   padding-left: 20px;
-  position: absolute;
+  position: fixed;
   top:0;
 
   @media(min-width: 1000px) {
@@ -18,117 +18,38 @@
   }
 }
 
-nav {
-  position: fixed;
-  top: 8px;
-  right: 20px;
+/*nav {
+  background-color: pink;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: height 0.5s, width 0.5s, top 0.5s, right 0.5s;
-}
-
-nav.is-open {
-  height: 100vh;
-  width: 100vw;
-  border-radius: 0;
-  top: 0;
-  right: 0;
-}
-
-nav.is-open .open-icon {
-  background-color: transparent;
-}
-
-nav.is-open .open-icon::before {
-  transform: translateY(2px) rotate(-45deg);
-}
-
-nav.is-open .open-icon::after {
-  transform: translateY(-2px) rotate(45deg);
-}
-
-.open {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
-  top: 8px;
-  right: 20px;
-  height: 50px;
-  width: 50px;
+  bottom: 20px;
+  left: 20px;
   border-radius: 50%;
-  cursor: pointer;
 }
 
-.open-icon {
-  transition: background-color 0.3s;
-}
-
-.open-icon,
-.open-icon::before,
-.open-icon::after {
-  width: 34px;
-  height: 4px;
-  background-color: white;
-  border-radius: 1px;
-}
-
-.open-icon::before,
-.open-icon::after {
-  content: '';
-  display: block;
-  transition: transform 0.3s;
-}
-
-.open-icon::before {
-  transform: translateY(-8px);
-}
-
-.open-icon::after {
-  transform: translateY(4px);
-}
-
-ul {
+.nav__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  transform: translate(calc(50vw - 25px), calc(-50vh + 40px)) scale(0);
-  transition: transform 0.6s, opacity 0.5s;
 }
 
-nav.is-open ul {
-  transform: none;
-  opacity: 1;
-}
-
-nav:not(.is-open) ul {
-  pointer-events: none;
-}
-
-li {
+.nav__item {
   list-style: none;
-  font-size: 60px;
-  font-family: helvetica;
+  font-size: 80px;
+  font-family: 'akzidenzgrotesk';
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 0.5rem;
+  text-shadow: 1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, -1px 0 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
 }
 
-li:not(last-child) {
-  margin-bottom: 40px;
+.nav__item:not(:last-child) {
+  margin-bottom: 60px;
 }
 
-a {
-  text-decoration: none;
-  color: #C2BDFB;
-}
+.nav__item a {
+  color: pink;
+}*/
