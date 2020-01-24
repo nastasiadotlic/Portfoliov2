@@ -10,6 +10,11 @@
 
 </head>
 <body>
+  <div class="cursor">
+    <div class="cursor__inner cursor__inner--circle"></div>
+    <div class="cursor__inner cursor__inner--dot"></div>
+  </div>
+
   <section class="lines">
     <div class="line"></div>
     <div class="line"></div>
@@ -25,28 +30,33 @@
  <header class="header">
    <img class="header__logo" src="../images/logo_white.svg" alt="logo initiale N et D">
 
-   <!--<nav id="nav" class="nav">
-     <ul class="nav__container">
-      <li class="nav__item"><a href="#">Who i am</a></li>
-      <li class="nav__item"><a href="#">My works</a></li>
-      <li class="nav__item"><a href="#">Contact</a></li>
-     </ul>
-   </nav>-->
+   <nav id="nav" data-hover>
+    <ul>
+      <li><a href="#">Who i am</a></li>
+      <li><a href="#">My works</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="open" id="open">
+      <div class="open-icon"></div>
+    </div>
+  </nav>
+
  </header>
 
  <section class="homepage">  
   <div class="title">
     <div class="title__container" data-rellax-speed="2">
       <h1 class="homepage__title">Hello</h1>
-      <div class="dot"></div>
+      <div class="dot" data-hover></div>
     </div>
     <p class="homepage__subtitle" data-rellax-speed="2">Je suis webdesigner</p>
   </div>
   
-  <div class="scroll">
+  <div class="scroll" data-rellax-speed="10">
     <img src="../images/arrow_scroll.svg" alt="flèche qui incite à scroller">
     <p>Scroll</p>
   </div>
+
  </section>
  <script src="rellax.min.js"></script>
  <script src="script.js"></script>
