@@ -18,14 +18,30 @@ CHANGING COLOR
 
 var dot = document.querySelector('.dot');
 var colors = ['red', 'blue', 'green'];
-console.log(dot);
+var blue = "#C0E9FF";
+var purple = "#C2BDFB";
 
-dot.addEventListener('click', function() {
+dot.addEventListener('click', function(color) {
+    if (color = purple) {
+        dot.style.backgroundColor = blue;
+    } else {
+        dot.style.backgroundColor = purple;
+    }
+    /*if(color != blue) {
+        dot.style.backgroundColor = blue;
+    } else {
+        dot.style.backgroundColor = purple;
+    }$/
+    /*colors.forEach(function(color){
+        console.log(color);
+        dot.style.backgroundColor = color;
+    })
+
   for(i = 0; i < colors.length; i++) {
-    console.log("boucle");
-    let color = colors[i];
-    dot.style.background = color;
-  }
+      
+    dot.style.backgroundColor = colors[i];
+  
+}*/
 })
 
 /*
