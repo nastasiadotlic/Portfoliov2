@@ -1,0 +1,52 @@
+.description {
+  position: absolute;
+  top : 100%;
+
+  @media(min-width: 1600px) {
+    padding-left: 245px;
+    padding-right: 245px;
+  }
+}
+
+.description__title {
+  color: white;
+  font-family: 'akzidenzgrotesk';
+  text-transform: uppercase;
+  font-size: 40px;
+  padding-left: 20px;
+
+  @media(min-width: 768px) {
+    font-size: 58px;
+  }
+
+  @media(min-width: 1600px) {
+    font-size: 72px;
+  }
+}
+
+.description__container {
+  color: white;
+  font-size: 18px;
+  font-family: 'roboto';
+  font-weight: lighter;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 150%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 70px;
+
+  @media(min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media(min-width: 1600px) {
+    font-size: 36px;
+  }
+}
+
+.description__style {
+  font-weight: bold;
+}

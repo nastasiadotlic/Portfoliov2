@@ -52,6 +52,8 @@ const Rellax = require('rellax');
 var rellax = new Rellax('.title__container');
 var rellax = new Rellax('.homepage__subtitle');
 var rellax = new Rellax('.scroll');
+/*var rellax = new Rellax('.description__title');
+var rellax = new Rellax('.description__container');*/
 
 /*
 SCROLL
