@@ -1,20 +1,21 @@
-.description {
+.works {
   position: absolute;
-  top : 110%;
+  top : 185%;
 
   @media(min-width: 1600px) {
     padding-left: 245px;
     padding-right: 245px;
+    top : 195%;
   }
 }
 
-.description__container {
+.works__container {
   display: flex;
   align-items: flex-end;
 }
 
-.description__title {
-  color: white;
+.works__title {
+  color: $white-color;
   font-family: 'akzidenzgrotesk';
   text-transform: uppercase;
   font-size: 40px;
@@ -29,29 +30,38 @@
   }
 }
 
-.description__text {
-  color: white;
-  font-size: 18px;
-  font-family: 'roboto';
-  font-weight: lighter;
+.works__items {
+  padding-left: 20px;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  line-height: 150%;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-top: 70px;
 
-  @media(min-width: 768px) {
-    font-size: 26px;
-  }
-
   @media(min-width: 1600px) {
-    font-size: 36px;
+    height: 500px;
   }
 }
 
-.description__style {
-  font-weight: bold;
+.works__item {
+  font-family: 'akzidenzgrotesk';
+  font-size: 28px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $primary-color;
+  transition: color 0.5s ease-in-out;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  @media(min-width: 768px) {
+    font-size: 40px;
+    letter-spacing: 0.2rem;
+  }
+
+  @media(min-width: 1600px) {
+    font-size: 60px;
+  }
 }
