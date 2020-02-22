@@ -2,7 +2,7 @@
 disappearance of the home page when the menu is open
  */
 
-var nav = document.getElementById("nav");
+/*var nav = document.getElementById("nav");
 var open = document.getElementById('open');
 var homepage = document.querySelector(".homepage");
 
@@ -10,7 +10,7 @@ var homepage = document.querySelector(".homepage");
 open.addEventListener('click', function() {
   nav.classList.toggle('is-open');
   homepage.style.display = homepage.style.display === 'none' ? '' : 'none';
-});
+});*/
 
 /*
 CHANGING COLOR

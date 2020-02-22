@@ -28,17 +28,12 @@
   </section>
   
  <header class="header">
-   <img class="header__logo" src="../images/logo_white.svg" alt="logo initiale N et D">
-
-   <nav id="nav" data-hover>
-    <ul>
-      <li><a href="#">Who i am</a></li>
-      <li><a href="#">My works</a></li>
-      <li><a href="#">Contact</a></li>
+   <nav class="nav">
+     <ul class="nav__items">
+       <li class="nav__item" data-hover><a href="#description">who i am</a></li>
+       <a href=""><img class="logo" src="../images/logo_white.svg" alt="logo initiale N et D" data-hover></a>
+       <li class="nav__item" data-hover><a href="#works">my works</a></li>
     </ul>
-    <div class="open" id="open">
-      <div class="open-icon"></div>
-    </div>
   </nav>
  </header>
 
@@ -57,7 +52,7 @@
   </div>
  </section>
 
- <section class="description" data-rellax-speed="2">
+ <section class="description" data-rellax-speed="2" id="description">
   <div class="description__container">
     <h2 class="description__title">who i am</h2>
     <div class="dot" data-hover></div>
@@ -66,10 +61,16 @@
     <p>Je m’appelle <span class="description__style">Nastasia</span></p>
     <p>Je suis Webdesigner en alternance chez <span class="description__style">Les Grappes</span>, et étudiante à <span class="description__style">HETIC</span>.</p>
     <p>Je recherche pour ma deuxième année d’alternance, une agence, qui me permettrait de m’accomplir en tant que Webdesigner.</p>
+    <div class="contact__logos">
+      <img src="../images/email.svg" alt="">
+      <img src="../images/dribbble.svg" alt="">
+      <img src="../images/linkedin.svg" alt="">
+    </div>
+    <p>Keep in touch ;)</p>
   </div>
  </section>
 
- <section class="works" data-rellax-speed="2">
+ <section class="works" data-rellax-speed="2" id="works">
   <div class="works__container">
     <h2 class="works__title">My works</h2>
     <div class="dot" data-hover></div>
@@ -82,11 +83,8 @@
   </div>
  </section>
 
- <section class="contact">
-  <div class="contact__container">
-    <h2 class="contact__title">Contact</h2>
-    <div class="dot" data-hover></div>
-  </div>
+ <section class="by">
+   <p class="by__text">See you soon !</p>
  </section>
 
 

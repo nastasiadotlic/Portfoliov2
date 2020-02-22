@@ -34,7 +34,7 @@
   font-size: 18px;
   font-family: 'roboto';
   font-weight: lighter;
-  height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,9 +49,24 @@
 
   @media(min-width: 1600px) {
     font-size: 36px;
+    height: 550px;
   }
 }
 
 .description__style {
   font-weight: bold;
+
+  &:hover {
+    color: $primary-color; 
+  }
+}
+
+.contact__logos {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+
+  @media(min-width: 1000px) {
+    width: 250px;
+  }
 }

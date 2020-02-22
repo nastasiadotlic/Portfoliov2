@@ -1,11 +1,11 @@
 .works {
   position: absolute;
-  top : 185%;
+  top : 200%;
 
   @media(min-width: 1600px) {
     padding-left: 245px;
     padding-right: 245px;
-    top : 195%;
+    top : 220%;
   }
 }
 
@@ -43,7 +43,7 @@
   }
 }
 
-.works__item {
+.works__item a {
   font-family: 'akzidenzgrotesk';
   font-size: 28px;
   text-transform: uppercase;
