@@ -16,33 +16,40 @@ open.addEventListener('click', function() {
 CHANGING COLOR
 */
 
-var dot = document.querySelector('.dot');
+var dot = document.querySelectorAll('.dot');
+var textChange = document.querySelectorAll('.textChange');
 var colors = ['red', 'blue', 'green'];
 var blue = "#C0E9FF";
 var purple = "#C2BDFB";
+var flag = true;
 
-dot.addEventListener('click', function(color) {
-    if (color = purple) {
-        dot.style.backgroundColor = blue;
-    } else {
-        dot.style.backgroundColor = purple;
+
+for(i=0; i<dot.length; i++) {
+    dot[i].addEventListener('click', ChangeColor);
+}
+
+function ChangeColor(e) {
+    //alert(document.getElementsByClassName('dot')[0].style.backgroundColor);
+    if (flag) {
+        for(i=0; i<dot.length; i++) {
+            dot[i].style.backgroundColor = blue;
+        }
+        for(j=0; j<textChange.length; j++) {
+            textChange[j].style.color = blue;
+        }
+        //document.getElementsByClassName('dot')[0].style.backgroundColor = blue;
+    } else  {
+        for(i=0; i<dot.length; i++) {
+            dot[i].style.backgroundColor = purple;
+        }
+        for(i=0; i<textChange.length; i++) {
+            textChange[i].style.color = purple;
+        }
+        //document.getElementsByClassName('dot')[0].style.backgroundColor = purple;
     }
-    /*if(color != blue) {
-        dot.style.backgroundColor = blue;
-    } else {
-        dot.style.backgroundColor = purple;
-    }$/
-    /*colors.forEach(function(color){
-        console.log(color);
-        dot.style.backgroundColor = color;
-    })
-
-  for(i = 0; i < colors.length; i++) {
-      
-    dot.style.backgroundColor = colors[i];
-  
-}*/
-})
+    flag = !flag;
+   
+}
 
 /*
 PARALLAX
