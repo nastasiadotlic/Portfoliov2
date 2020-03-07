@@ -17,19 +17,20 @@ CHANGING COLOR
 */
 
 var dot = document.querySelectorAll('.dot');
+var lines = document.querySelectorAll('.line');
 var textChange = document.querySelectorAll('.textChange');
-var colors = ['red', 'blue', 'green'];
+var textTransparent = document.querySelectorAll('.textTransparent');
 var blue = "#C0E9FF";
 var purple = "#C2BDFB";
+var transparent = "transparent"
 var flag = true;
-
+console.log(textTransparent);
 
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
 }
 
 function ChangeColor(e) {
-    //alert(document.getElementsByClassName('dot')[0].style.backgroundColor);
     if (flag) {
         for(i=0; i<dot.length; i++) {
             dot[i].style.backgroundColor = blue;
@@ -37,7 +38,23 @@ function ChangeColor(e) {
         for(j=0; j<textChange.length; j++) {
             textChange[j].style.color = blue;
         }
-        //document.getElementsByClassName('dot')[0].style.backgroundColor = blue;
+        for(k=0; k<lines.length; k++) {
+            lines[k].style.backgroundColor = blue;
+        }
+
+
+        /*for(l=0; l<textTransparent.length; l++) {
+            textTransparent[l].addEventListener("mouseenter", function() {
+                textTransparent[l].style.color = blue;
+            }) 
+        for(m=0; m<textTransparent.length; m++){
+            textTransparent[m].addEventListener("mouseleave", function() {
+                textTransparent[m].style.color = transparent;
+            }) 
+        }  
+            
+        }*/
+        
     } else  {
         for(i=0; i<dot.length; i++) {
             dot[i].style.backgroundColor = purple;
@@ -45,7 +62,15 @@ function ChangeColor(e) {
         for(i=0; i<textChange.length; i++) {
             textChange[i].style.color = purple;
         }
-        //document.getElementsByClassName('dot')[0].style.backgroundColor = purple;
+        for(k=0; k<lines.length; k++) {
+            lines[k].style.backgroundColor = purple;
+        }
+        /*textTransparent.addEventListener("mouseenter", function() {
+            textTransparent.style.color = purple;
+        }) 
+        textTransparent.addEventListener("mouseleave", function() {
+            textTransparent.style.color = transparent;
+        }) */
     }
     flag = !flag;
    
