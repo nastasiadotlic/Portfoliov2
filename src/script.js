@@ -22,59 +22,48 @@ var textChange = document.querySelectorAll('.textChange');
 var textTransparent = document.querySelectorAll('.textTransparent');
 var blue = "#C0E9FF";
 var purple = "#C2BDFB";
-var transparent = "transparent"
-var flag = true;
-console.log(textTransparent);
+var transparent = "transparent";
+var currentColor = purple;
+
+
+
 
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
 }
 
-function ChangeColor(e) {
-    if (flag) {
-        for(i=0; i<dot.length; i++) {
-            dot[i].style.backgroundColor = blue;
-        }
-        for(j=0; j<textChange.length; j++) {
-            textChange[j].style.color = blue;
-        }
-        for(k=0; k<lines.length; k++) {
-            lines[k].style.backgroundColor = blue;
-        }
-
-
-        /*for(l=0; l<textTransparent.length; l++) {
-            textTransparent[l].addEventListener("mouseenter", function() {
-                textTransparent[l].style.color = blue;
-            }) 
-        for(m=0; m<textTransparent.length; m++){
-            textTransparent[m].addEventListener("mouseleave", function() {
-                textTransparent[m].style.color = transparent;
-            }) 
-        }  
-            
-        }*/
-        
-    } else  {
-        for(i=0; i<dot.length; i++) {
-            dot[i].style.backgroundColor = purple;
-        }
-        for(i=0; i<textChange.length; i++) {
-            textChange[i].style.color = purple;
-        }
-        for(k=0; k<lines.length; k++) {
-            lines[k].style.backgroundColor = purple;
-        }
-        /*textTransparent.addEventListener("mouseenter", function() {
-            textTransparent.style.color = purple;
-        }) 
-        textTransparent.addEventListener("mouseleave", function() {
-            textTransparent.style.color = transparent;
-        }) */
-    }
-    flag = !flag;
-   
+for(l=0; l<textTransparent.length; l++) {
+    textTransparent[l].addEventListener("mouseenter", function() {
+        this.style.color = dot[0].style.backgroundColor ? dot[0].style.backgroundColor : purple;
+    }) 
 }
+for(m=0; m<textTransparent.length; m++){
+    textTransparent[m].addEventListener("mouseleave", function() {
+        this.style.color = transparent;
+    }) 
+} 
+function ChangeColor(e) {
+    if(currentColor == blue)
+        currentColor = purple;
+    else
+        currentColor = blue;
+
+    for(i=0; i<dot.length; i++) {
+        dot[i].style.backgroundColor = currentColor;
+    }
+    for(j=0; j<textChange.length; j++) {
+        textChange[j].style.color = currentColor;
+    }
+    for(k=0; k<lines.length; k++) {
+        lines[k].style.backgroundColor = currentColor;
+    }
+
+    for(k=0; k<textTransparent.length; k++) {
+        textTransparent[k].style.webkitTextStrokeColor = currentColor;
+    }
+}
+
+
 
 /*
 PARALLAX

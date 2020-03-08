@@ -43,7 +43,7 @@
   }
 }
 
-.works__item a {
+.textTransparent {
   font-family: 'akzidenzgrotesk';
   font-size: 28px;
   text-transform: uppercase;
@@ -52,9 +52,9 @@
   -webkit-text-stroke-color: $primary-color;
   transition: color 0.5s ease-in-out;
 
-  &:hover {
+  /*&:hover {
     color: $primary-color;
-  }
+  }*/
 
   @media(min-width: 768px) {
     font-size: 40px;
