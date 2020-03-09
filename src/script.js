@@ -1,16 +1,3 @@
-/*
-disappearance of the home page when the menu is open
- */
-
-/*var nav = document.getElementById("nav");
-var open = document.getElementById('open');
-var homepage = document.querySelector(".homepage");
-
-
-open.addEventListener('click', function() {
-  nav.classList.toggle('is-open');
-  homepage.style.display = homepage.style.display === 'none' ? '' : 'none';
-});*/
 
 /*
 CHANGING COLOR
@@ -24,9 +11,7 @@ var blue = "#C0E9FF";
 var purple = "#C2BDFB";
 var transparent = "transparent";
 var currentColor = purple;
-
-
-
+var header = document.querySelector('.header');
 
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
@@ -61,6 +46,7 @@ function ChangeColor(e) {
     for(k=0; k<textTransparent.length; k++) {
         textTransparent[k].style.webkitTextStrokeColor = currentColor;
     }
+    header.style.borderBottomColor = currentColor;
 }
 
 
@@ -75,12 +61,6 @@ var rellax = new Rellax('.homepage__subtitle');
 var rellax = new Rellax('.scroll');
 var rellax = new Rellax('.description');
 var rellax = new Rellax('.works');
-
-/*
-SCROLL
-*/
-
-//faire dispoaraitre le scroll
 
 
 /*
