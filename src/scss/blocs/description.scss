@@ -1,16 +1,18 @@
 .description {
-  position: absolute;
-  top : 110%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
 
-  @media(min-width: 1600px) {
-    padding-left: 245px;
-    padding-right: 245px;
+  @media(min-width: 1200px) {
+    padding-left: 120px;
   }
 }
 
-#toto {
+#description-anchor {
   position: absolute;
-  top : 80%;
+  top : 90%;
 }
 
 .description__container {
@@ -23,7 +25,6 @@
   font-family: 'akzidenzgrotesk';
   text-transform: uppercase;
   font-size: 40px;
-  padding-left: 20px;
 
   @media(min-width: 768px) {
     font-size: 58px;
@@ -39,17 +40,19 @@
   font-size: 18px;
   font-family: 'roboto';
   font-weight: lighter;
-  height: 350px;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   line-height: 150%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 70px;
+  margin-top: 24px;
 
   @media(min-width: 768px) {
     font-size: 26px;
+  }
+
+  @media(min-width: 1200px) {
+    padding-right: 120px;
   }
 
   @media(min-width: 1600px) {
