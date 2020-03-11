@@ -36,13 +36,13 @@
   justify-content: space-between;
 }
 
-.project__first {
+.project {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.project__globe {
+.project__image {
   max-width: 40%;
 
   @media(min-width: 768px) {
@@ -52,6 +52,7 @@
 
 .project__item {
   margin-left: 16px;
+  width: 30%;
 
   @media(min-width: 576px) {
     margin-left: 24px;
@@ -63,6 +64,7 @@
 
   @media(min-width: 1200px) {
     margin-left: 56px;
+    width: 35%;
   }
 
   @media(min-width: 1600px) {
