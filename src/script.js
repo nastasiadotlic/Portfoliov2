@@ -66,7 +66,7 @@ var rellax = new Rellax('.works');
 /*
 CURSOR
 */
-
+/*
 {
   // Some help functions.
   const shuffleArray = arr => arr.sort(() => Math.random() - 0.5);
@@ -152,4 +152,4 @@ CURSOR
       link.addEventListener('mouseleave', () => cursor.leave() );
       link.addEventListener('click', () => cursor.click() );
   });
-}
+}*/
