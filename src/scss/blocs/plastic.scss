@@ -48,3 +48,173 @@
     left: 0;
   }
 }
+
+.plastic__content {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 32px;
+
+  @media(min-width: 1200px) {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 64px;
+
+  }
+}
+
+@media(min-width: 576px) {
+  .plastic__content--about {
+    display: flex;
+  }
+
+  @media(min-width: 1200px) {
+    .plastic__content--about {
+      justify-content: center;
+    }
+  }
+}
+
+.plastic__content--about h2 {
+  font-family: 'akzidenzgrotesk';
+  color: white;
+  font-size: 20px;
+  line-height: 1.3;
+
+  @media(min-width: 576px) {
+    width: 30%;
+    font-size: 22px
+  }
+
+  @media(min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media(min-width: 992px) {
+    font-size: 28px;
+  }
+
+  @media(min-width: 1200px) {
+    font-size: 30px;
+  }
+
+  @media(min-width: 1366px) {
+    width: 25%;
+  }
+}
+
+@media(min-width: 576px) {
+  .plastic__text--container {
+    width: 70%;
+  }
+
+  @media(min-width: 1200px) {
+    .plastic__text--container {
+      width: 50%;
+    }
+  }
+
+  @media(min-width: 1366px) {
+    .plastic__text--container {
+      width: 45%;
+    }
+  }
+}
+
+.plastic__text {
+  color: white;
+  margin-top: 16px;
+  font-weight: lighter;
+  line-height: 1.3;
+
+  @media(min-width: 576px) {
+    font-size: 18px;
+  }
+
+  @media(min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media(min-width: 1200px) {
+    font-size: 22px;
+  }
+}
+
+@media(min-width: 576px) {
+  .plastic__text:first-child {
+    margin-top: 0;
+  }
+}
+
+.plastic__content--role {
+  margin-top: 32px;
+
+  @media(min-width: 576px) {
+    display: flex;
+  }
+
+  @media(min-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.plastic__content--role h2 {
+  font-family: 'akzidenzgrotesk';
+  color: white;
+  font-size: 20px;
+
+  @media(min-width: 576px) {
+    width: 30%;
+    font-size: 22px
+  }
+
+  @media(min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media(min-width: 992px) {
+    font-size: 28px;
+  }
+
+  @media(min-width: 1200px) {
+    font-size: 30px;
+  }
+
+  @media(min-width: 1366px) {
+    width: 25%;
+  }
+}
+
+.plastic__content--role p {
+  color: white;
+  margin-top: 16px;
+  font-weight: lighter;
+
+  @media(min-width: 576px) {
+    margin-top: 0;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  @media(min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media(min-width: 1200px) {
+    width: 50%;
+    font-size: 22px;
+  }
+
+  @media(min-width: 1366px) {
+    width: 45%;
+  }
+}
+
+.plastic__button {
+  height: 40px;
+  width: 210px;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
