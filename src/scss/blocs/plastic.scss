@@ -1,4 +1,4 @@
-.plastic__header {
+.work__header {
   display: flex;
   align-items: center;
   margin-top: 100px;
@@ -8,7 +8,7 @@
   }
 }
 
-.plastic__header--image {
+.work__header--image {
   position: relative;
   left: -120px;
 
@@ -17,7 +17,7 @@
   }
 }
 
-.plastic__header--title {
+.work__header--title {
   position: relative;
   left: -88px;
   font-family: 'akzidenzgrotesk';
@@ -49,7 +49,7 @@
   }
 }
 
-.plastic__content {
+.work__content {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 32px;
@@ -63,18 +63,18 @@
 }
 
 @media(min-width: 576px) {
-  .plastic__content--about {
+  .about {
     display: flex;
   }
 
   @media(min-width: 1200px) {
-    .plastic__content--about {
+    .about {
       justify-content: center;
     }
   }
 }
 
-.plastic__content--about h2 {
+.about__title {
   font-family: 'akzidenzgrotesk';
   color: white;
   font-size: 20px;
@@ -103,24 +103,24 @@
 }
 
 @media(min-width: 576px) {
-  .plastic__text--container {
+  .about__container {
     width: 70%;
   }
 
   @media(min-width: 1200px) {
-    .plastic__text--container {
+    .about__container {
       width: 50%;
     }
   }
 
   @media(min-width: 1366px) {
-    .plastic__text--container {
+    .about__container {
       width: 45%;
     }
   }
 }
 
-.plastic__text {
+.about__text {
   color: white;
   margin-top: 16px;
   font-weight: lighter;
@@ -140,12 +140,12 @@
 }
 
 @media(min-width: 576px) {
-  .plastic__text:first-child {
+  .about__text:first-child {
     margin-top: 0;
   }
 }
 
-.plastic__content--role {
+.role {
   margin-top: 32px;
 
   @media(min-width: 576px) {
@@ -157,7 +157,7 @@
   }
 }
 
-.plastic__content--role h2 {
+.role__title {
   font-family: 'akzidenzgrotesk';
   color: white;
   font-size: 20px;
@@ -184,7 +184,7 @@
   }
 }
 
-.plastic__content--role p {
+.role__text {
   color: white;
   margin-top: 16px;
   font-weight: lighter;
@@ -209,7 +209,34 @@
   }
 }
 
-.plastic__button {
+.work__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @media(min-width: 768px) {
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+
+  @media(min-width: 992px) {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  @media(min-width: 1200px) {
+    margin-top: 72px;
+    margin-bottom: 72px;
+  }
+
+  @media(min-width: 1366px) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+.work__button--containe {
   height: 40px;
   width: 210px;
   background-color: $primary-color;
@@ -217,4 +244,5 @@
   justify-content: center;
   align-items: center;
   border-radius: 50px;
+  font-weight: lighter;
 }
