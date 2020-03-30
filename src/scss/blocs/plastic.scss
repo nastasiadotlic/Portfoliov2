@@ -4,7 +4,7 @@
   margin-top: 100px;
 
   @media(min-width: 1366px) {
-    margin-top: 130px;
+    margin-top: 180px;
   }
 }
 
@@ -52,13 +52,13 @@
 .work__content {
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 32px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media(min-width: 1200px) {
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-top: 64px;
-
+    height: 70vh;
   }
 }
 
@@ -213,31 +213,15 @@
 .work__button {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  align-items: center;
   margin-bottom: 40px;
 
-  @media(min-width: 768px) {
-    margin-top: 56px;
-    margin-bottom: 56px;
-  }
-
-  @media(min-width: 992px) {
-    margin-top: 64px;
-    margin-bottom: 64px;
-  }
-
   @media(min-width: 1200px) {
-    margin-top: 72px;
-    margin-bottom: 72px;
-  }
-
-  @media(min-width: 1366px) {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
   }
 }
 
-.work__button--containe {
+.work__button--container {
   height: 40px;
   width: 210px;
   background-color: $primary-color;
@@ -246,4 +230,56 @@
   align-items: center;
   border-radius: 50px;
   font-weight: lighter;
+  cursor: pointer;
+
+  @media(min-width: 1200px) {
+    height: 45px;
+    width: 240px;
+    font-size: 18px;
+  }
+}
+
+.work__model {
+  display: flex;
+  justify-content: center;
+}
+
+.work__model--picture {
+  max-width: 100%;
+}
+
+.work__pagination {
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  @media(min-width: 576px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @media(min-width: 768px) {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  @media(min-width: 992px) {
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+
+  @media(min-width: 1200px) {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    font-size: 22px;
+  }
+}
+
+.previous__link, .next__link {
+  color: $primary-color;
 }
