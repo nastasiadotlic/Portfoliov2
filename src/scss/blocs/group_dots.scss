@@ -1,0 +1,118 @@
+.groupDots {
+  //position: fixed;
+  //top: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+}
+
+.groupDots__aspect {
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+
+  @media(min-width: 1000px) {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.purple {
+  background-color: $primary-color;
+}
+
+.purple--stroke {
+  border: 1px solid $primary-color;
+  background-color: transparent;
+}
+
+.purple--bigger {
+  width: 18px;
+  height: 18px;
+
+  @media(min-width: 1000px) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.blue {
+  background-color: $tertiary-color;
+}
+
+.blue--bigger {
+  width: 18px;
+  height: 18px;
+
+  @media(min-width: 1000px) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.blue--stroke {
+  border: 1px solid $tertiary-color;
+  background-color: transparent;
+}
+
+.groupDots__one {
+  top: 20%;
+  left: 5%;
+}
+
+.groupDots__two {
+  top: 70%;
+  left: 11%;
+}
+
+.groupDots__three {
+  top: 100%;
+  left: 19%;
+}
+
+.groupDots__four {
+  top: 30%;
+  left: 72%;
+}
+
+.groupDots__five {
+  top: 84%;
+  left: 84%;
+}
+
+.groupDots__six {
+  top: 124%;
+  left: 52%;
+}
+
+.groupDots__seven {
+  top: 158%;
+  left: 71%;
+}
+
+.groupDots__height {
+  top: 187%;
+  left: 89%;
+}
+
+.groupDots__nine {
+  top: 250%;
+  left: 69%;
+}
+
+.groupDots__ten {
+  top: 270%;
+  left: 15%;
+}
+
+.groupDots__eleven {
+  top: 170%;
+  left: 15%;
+}
+
+.groupDots__twelve {
+  top: 200%;
+  left: 20%;
+}

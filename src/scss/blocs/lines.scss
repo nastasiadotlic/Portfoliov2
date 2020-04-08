@@ -51,24 +51,3 @@
 .line9 {
   left: 90%; 
 }
-
-
-/*
-old lines
-
-.lines {
-  height: 100%;
-  background-color: $secondary-color;
-  display: flex;
-  justify-content: space-around;
-
-  @media(min-width: 1000px) {
-    height: 10000px;
-  }
-}
-
-.line {
-  background-color: $primary-color;
-  width: 1px;
-  opacity: 40%;
-}*/
