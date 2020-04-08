@@ -1,6 +1,4 @@
 .groupDots {
-  //position: fixed;
-  //top: 0;
   height: 100%;
   width: 100vw;
   z-index: -1;
@@ -50,11 +48,6 @@
     width: 23px;
     height: 23px;
   }
-}
-
-.blue--stroke {
-  border: 1px solid $tertiary-color;
-  background-color: transparent;
 }
 
 .groupDots__one {
@@ -115,4 +108,18 @@
 .groupDots__twelve {
   top: 200%;
   left: 20%;
+}
+
+.groupDots__thirteen {
+  top: 15%;
+  left: 80%
+}
+
+.groupDots__fourteen {
+  top: 45%;
+  left: 63%;
+
+  @media(min-width: 1200px) {
+    top: 65%;
+  }
 }

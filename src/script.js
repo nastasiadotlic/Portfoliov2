@@ -12,6 +12,10 @@ var purple = "#C2BDFB";
 var transparent = "transparent";
 var currentColor = purple;
 var header = document.querySelector('.header');
+var purpleStroke = document.querySelectorAll('.purple--stroke');
+var purpleDot = document.querySelectorAll('.purple');
+var blueDot = document.querySelectorAll('.blue');
+
 
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
@@ -47,6 +51,15 @@ function ChangeColor(e) {
         textTransparent[k].style.webkitTextStrokeColor = currentColor;
     }
     header.style.borderBottomColor = currentColor;
+    /*for(i=0; i<purpleDot.length; i++) {
+        purpleDot[i].style.backgroundColor = currentColor;
+    }
+    for(i=0; i<blueDot.length; i++) {
+        blueDot[i].style.backgroundColor = currentColor;
+    }
+    for(i=0; i<purpleStroke.length; i++) {
+        purpleStroke[i].style.borderColor = currentColor;
+    } */
 }
 
 
@@ -61,8 +74,7 @@ var rellax = new Rellax('.homepage__subtitle');
 var rellax = new Rellax('.scroll');
 var rellax = new Rellax('.description');
 var rellax = new Rellax('.works');
-
-
+var rellax = new Rellax('.work');
 
 /*
 CURSOR

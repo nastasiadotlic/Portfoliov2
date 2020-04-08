@@ -52,7 +52,7 @@
 .work__content {
   padding-left: 20px;
   padding-right: 20px;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -286,4 +286,20 @@
 
 .previous__link, .next__link {
   color: $primary-color;
+}
+
+.groupDots__six {
+  display: none;
+
+  @media(min-width: 1200px) {
+    display: block;
+  }
+}
+
+.groupDots__seven {
+  display: none;
+
+  @media(min-width: 1200px) {
+    display: block;
+  }
 }
