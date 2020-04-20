@@ -1,0 +1,11 @@
+@keyframes rebound {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes size {
+  to {
+    scale: 1.1;
+  }
+}

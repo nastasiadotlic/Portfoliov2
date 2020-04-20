@@ -12,9 +12,6 @@ var purple = "#C2BDFB";
 var transparent = "transparent";
 var currentColor = purple;
 var header = document.querySelector('.header');
-var purpleStroke = document.querySelectorAll('.purple--stroke');
-var purpleDot = document.querySelectorAll('.purple');
-var blueDot = document.querySelectorAll('.blue');
 
 
 for(i=0; i<dot.length; i++) {
@@ -31,6 +28,7 @@ for(m=0; m<textTransparent.length; m++){
         this.style.color = transparent;
     }) 
 } 
+
 function ChangeColor(e) {
     if(currentColor == blue)
         currentColor = purple;
@@ -51,18 +49,12 @@ function ChangeColor(e) {
         textTransparent[k].style.webkitTextStrokeColor = currentColor;
     }
     header.style.borderBottomColor = currentColor;
-    /*for(i=0; i<purpleDot.length; i++) {
-        purpleDot[i].style.backgroundColor = currentColor;
-    }
-    for(i=0; i<blueDot.length; i++) {
-        blueDot[i].style.backgroundColor = currentColor;
-    }
-    for(i=0; i<purpleStroke.length; i++) {
-        purpleStroke[i].style.borderColor = currentColor;
-    } */
+    this.style.animationPlayState = "paused";
 }
 
-
+/*function stopAnimation(e) {
+    dot.style.animationPlayState = "paused";
+}*/
 
 /*
 PARALLAX

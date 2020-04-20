@@ -210,7 +210,7 @@
   }
 }
 
-.work__button {
+/*.work__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,11 +237,17 @@
     width: 240px;
     font-size: 18px;
   }
-}
+}*/
 
 .work__model {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  img {
+    margin-bottom: 32px;
+  }
 }
 
 .work__model--picture {
