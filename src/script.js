@@ -43,12 +43,14 @@ function ChangeColor(e) {
     }
     for(k=0; k<lines.length; k++) {
         lines[k].style.backgroundColor = currentColor;
+        lines[k].style.opacity = "20%";
     }
 
     for(k=0; k<textTransparent.length; k++) {
         textTransparent[k].style.webkitTextStrokeColor = currentColor;
     }
     header.style.borderBottomColor = currentColor;
+    
     this.style.animationPlayState = "paused";
 }
 

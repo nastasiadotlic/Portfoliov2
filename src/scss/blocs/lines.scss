@@ -8,10 +8,9 @@
 }
 
 .line {
-  background-color: $primary-color;
+  background-color: rgba(194, 189, 251, 0.2);
   height: 100%;
   width: 1px;
-  opacity: 50%;
   position: absolute;
   top: 0;
 }
