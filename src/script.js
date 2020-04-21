@@ -1,3 +1,16 @@
+/*
+LOADER
+*/
+
+var home = document.querySelector('.home');
+
+/*var timer = setTimeout(function() {
+    window.location = "screen/homepage.html";
+    clearTimeout();
+}, 5000);*/
+
+
+
 
 /*
 CHANGING COLOR
@@ -50,7 +63,8 @@ function ChangeColor(e) {
         textTransparent[k].style.webkitTextStrokeColor = currentColor;
     }
     header.style.borderBottomColor = currentColor;
-    
+    //header.style.borderBottomColor.opacity = "0.2";
+
     this.style.animationPlayState = "paused";
 }
 

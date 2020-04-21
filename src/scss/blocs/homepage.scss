@@ -10,15 +10,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
-  @media(min-width: 1200px) {
+  /*@media(min-width: 1200px) {
     padding-left: 120px;
-  }
+  }*/
 }
 
 .title__container {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
 
 .homepage__title {
@@ -75,6 +77,26 @@
   font-weight: lighter;
   color: $primary-color;
   font-size: 16px;
+  margin-top: 24px;
+
+  @media(min-width: 576px) {
+    font-size: 24px;
+  }
+
+  @media(min-width: 1200px) {
+    font-size: 32px;
+    margin-top: 32px;
+  }
+
+  @media(min-width: 1600px) {
+    font-size: 40px;
+  }
+}
+
+.homepage__subtitle--second {
+  font-family: 'roboto';
+  font-weight: lighter;
+  color: white;
   margin-top: 24px;
 
   @media(min-width: 576px) {

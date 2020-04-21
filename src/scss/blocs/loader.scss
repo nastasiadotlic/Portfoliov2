@@ -1,0 +1,43 @@
+.nav__home {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.home {
+  height: 100vh;
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //animation: fade 5s ease;
+  
+}
+
+.home__title {
+  font-family: 'akzidenzgrotesk';
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 0.15em;
+  color: white;
+  animation: appear 3s ease-in-out;
+
+  @media(min-width: 1200px) {
+    font-size: 60px;
+  }
+}
+
+.home__subtitle {
+  font-family: 'roboto';
+  font-weight: lighter;
+  color: white;
+  font-size: 20px;
+  margin-top: 24px;
+  animation: appear 3s ease-in-out;
+
+  @media(min-width: 1200px) {
+    font-size: 30px;
+  }
+} 
