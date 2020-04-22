@@ -4,10 +4,18 @@ LOADER
 
 var home = document.querySelector('.home');
 
-/*var timer = setTimeout(function() {
-    window.location = "screen/homepage.html";
-    clearTimeout();
-}, 5000);*/
+// setTimeout(function() {
+    
+//     document.location.href="screen/homepage.html";
+//     clearTimeout();
+// }, 5000);
+
+// setTimeout(function(e) {
+//     alert("say hello");
+// }, 4000);
+
+
+
 
 
 
@@ -29,6 +37,7 @@ var header = document.querySelector('.header');
 
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
+    
 }
 
 for(l=0; l<textTransparent.length; l++) {
@@ -64,13 +73,12 @@ function ChangeColor(e) {
     }
     header.style.borderBottomColor = currentColor;
     //header.style.borderBottomColor.opacity = "0.2";
-
-    this.style.animationPlayState = "paused";
 }
 
-/*function stopAnimation(e) {
-    dot.style.animationPlayState = "paused";
-}*/
+
+function stopAnimation(e) {
+    this.style.animationPlayState = "paused";
+}
 
 /*
 PARALLAX
@@ -83,6 +91,8 @@ var rellax = new Rellax('.scroll');
 var rellax = new Rellax('.description');
 var rellax = new Rellax('.works');
 var rellax = new Rellax('.work');
+
+
 
 /*
 CURSOR
