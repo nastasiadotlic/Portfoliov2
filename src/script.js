@@ -1,24 +1,3 @@
-/*
-LOADER
-*/
-
-var home = document.querySelector('.home');
-
-// setTimeout(function() {
-    
-//     document.location.href="screen/homepage.html";
-//     clearTimeout();
-// }, 5000);
-
-// setTimeout(function(e) {
-//     alert("say hello");
-// }, 4000);
-
-
-
-
-
-
 
 /*
 CHANGING COLOR
@@ -31,13 +10,17 @@ var textTransparent = document.querySelectorAll('.textTransparent');
 var blue = "#C0E9FF";
 var purple = "#C2BDFB";
 var transparent = "transparent";
-var currentColor = purple;
+var currentColor;
 var header = document.querySelector('.header');
 
+window.addEventListener('load', function() {
+    for(i=0; i<textChange.length; i++) {
+        textChange[i].style.color = currentColor;
+    }
+})
 
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
-    
 }
 
 for(l=0; l<textTransparent.length; l++) {
@@ -50,6 +33,8 @@ for(m=0; m<textTransparent.length; m++){
         this.style.color = transparent;
     }) 
 } 
+
+
 
 function ChangeColor(e) {
     if(currentColor == blue)
@@ -73,11 +58,17 @@ function ChangeColor(e) {
     }
     header.style.borderBottomColor = currentColor;
     //header.style.borderBottomColor.opacity = "0.2";
+    
+    for(i=0; i<dot.length; i++) {
+        dot[i].style.animationPlayState = "paused";
+    }
 }
 
 
+
+
 function stopAnimation(e) {
-    this.style.animationPlayState = "paused";
+    
 }
 
 /*
