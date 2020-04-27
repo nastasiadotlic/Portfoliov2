@@ -1,23 +1,40 @@
 #work-anchor {
   position: absolute;
-  top : 170%;
+  top : 160%;
+
+  @media(min-width: 992px) {
+    top: 230%;
+  }
 }
 
 .works {
-  margin-top: 90px;
+  position: absolute;
+  top : 200%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100vw;
+
+  @media(min-width: 992px) {
+    top: 230%;
+  }
 
   @media(min-width: 1200px) {
-    padding-left: 120px;
-    padding-right: 120px;
+    top: 260%;
+  }
+
+  @media(min-width: 1600px) {
+    top: 245%;
   }
 }
 
 .works__container {
   display: flex;
   align-items: flex-end;
+
+  @media(min-width: 1200px) {
+    padding-left: 10%;
+  }
 }
 
 .works__title {
@@ -30,8 +47,8 @@
     font-size: 58px;
   }
 
-  @media(min-width: 1600px) {
-    font-size: 72px;
+  @media(min-width: 1200px) {
+    font-size: 90px;
   }
 }
 
@@ -48,14 +65,12 @@
 
   @media(min-width: 1200px) {
     margin-top: 80px;
-
   }
 }
 
 .project {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 32px;
 
   @media(min-width: 768px) {
@@ -64,59 +79,40 @@
 
   @media(min-width: 1200px) {
     margin-bottom: 74px;
-
+    margin-left: 10%;
   }
 }
 
 .project__image {
-  max-width: 40%;
+  max-width: 47%;
 
-  /*@media(min-width: 768px) {
-    max-width: 35%;
+  @media(min-width: 1200px) {
+    min-width: 36%;
   }
-
-  @media(min-width: 1500px) {
-    max-width: 50%;
-  }*/
 }
 
 .project__item {
   margin-left: 16px;
-  width: 30%;
 
   @media(min-width: 576px) {
-    margin-left: 24px;
+    margin-left: 42px;
   }
 
-  @media(min-width: 768px) {
-    margin-left: 40px;
-  }
-
-  @media(min-width: 1200px) {
-    margin-left: 56px;
-    width: 35%;
-  }
-
-  @media(min-width: 1600px) {
-    margin-left: 64px;
+  @media(min-width: 992px) {
+    margin-left: 58px;
   }
 }
 
 .textTransparent {
   font-family: 'akzidenzgrotesk';
-  font-size: 28px;
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: $primary-color;
   transition: color 0.5s ease-in-out;
+  font-size: calc(32px + (70 - 32) * ((100vw - 320px) / (1200 - 320)));
 
   @media(min-width: 768px) {
-    font-size: 40px;
     letter-spacing: 0.2rem;
-  }
-
-  @media(min-width: 1600px) {
-    font-size: 60px;
   }
 }
