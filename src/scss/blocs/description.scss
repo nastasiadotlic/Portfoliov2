@@ -15,7 +15,7 @@
   display: flex;
   align-items: flex-end;
 
-  @media(min-width: 1200px) {
+  @media(min-width: 992px) {
     padding-left: 10%;
   }
 }
@@ -47,9 +47,12 @@
     font-size: 26px;
   }
 
+  @media(min-width: 992px) {
+    padding-left: 10%;
+  }
+
   @media(min-width: 1200px) {
     margin-top: 104px;
-    padding-left: 10%;
   }
 
   @media(min-width: 1600px) {
@@ -71,7 +74,7 @@
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: $white-color;
+  -webkit-text-stroke-color: $primary-color;
   width: 100vw;
   overflow: hidden;
   white-space: nowrap;
@@ -123,23 +126,3 @@
   font-family: "roboto";
   font-weight: lighter;
 }
-
-
-
-
-
-/*
-.description__style {
-  font-weight: bold;
-  color: $primary-color;
-}
-
-.contact__logos {
-  width: 210px;
-  display: flex;
-  justify-content: space-between;
-
-  @media(min-width: 1000px) {
-    width: 250px;
-  }
-}*/
