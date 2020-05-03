@@ -13,11 +13,11 @@ var currentColor = purple;
 var header = document.querySelector('.header');
 
 
-window.addEventListener('load', function() {
+/*window.addEventListener('load', function() {
   for(i=0; i<textChange.length; i++) {
       textChange[i].style.color = currentColor;
   }
-})
+})*/
 
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
@@ -57,9 +57,15 @@ function ChangeColor(e) {
         textTransparent[k].style.webkitTextStrokeColor = currentColor;
     }
     header.style.borderBottomColor = currentColor;
-    //header.style.borderBottomColor.opacity = "0.2";
+    if (currentColor == blue) {
+        header.style.borderBottomColor = "rgb(192, 233, 255, 0.2)";
+    } else {
+        header.style.borderBottomColor = "rgb(194, 189, 251, 0.2)";
+    }
     
     for(i=0; i<dot.length; i++) {
         dot[i].style.animationPlayState = "paused";
     }
+
+    sessionStorage.setItem('currentColor', currentColor);
 }
