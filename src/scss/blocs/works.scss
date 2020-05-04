@@ -43,6 +43,7 @@
 .works__container {
   display: flex;
   align-items: flex-end;
+  padding-left: 10px;
 
   @media(min-width: 992px) {
     padding-left: 10%;
@@ -84,6 +85,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 32px;
+  padding-left: 10px;
 
   @media(min-width: 768px) {
     margin-bottom: 48px;
@@ -92,6 +94,7 @@
   @media(min-width: 1200px) {
     margin-bottom: 74px;
     margin-left: 10%;
+    padding-left: 0;
   }
 }
 

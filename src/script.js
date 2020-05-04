@@ -8,7 +8,6 @@ var rellax = new Rellax('.homepage__subtitle');
 var rellax = new Rellax('.scroll');
 var rellax = new Rellax('.description');
 var rellax = new Rellax('.works');
-var rellax = new Rellax('.work');
 
 
 
