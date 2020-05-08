@@ -12,13 +12,6 @@ var transparent = "transparent";
 var currentColor = purple;
 var header = document.querySelector('.header');
 
-
-/*window.addEventListener('load', function() {
-  for(i=0; i<textChange.length; i++) {
-      textChange[i].style.color = currentColor;
-  }
-})*/
-
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
 }
@@ -67,5 +60,8 @@ function ChangeColor(e) {
         dot[i].style.animationPlayState = "paused";
     }
 
-    sessionStorage.setItem('currentColor', currentColor);
+    localStorage.setItem('currentColor', currentColor);
+    
+
+    
 }

@@ -10,7 +10,6 @@ var rellax = new Rellax('.description');
 var rellax = new Rellax('.works');
 
 
-
 /*
 CURSOR
 */
