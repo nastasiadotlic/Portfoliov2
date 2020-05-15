@@ -1,11 +1,12 @@
 #description-anchor {
   position: absolute;
-  top : 90%;
+  top : 80%;
 }
 
 .description {
-  position: absolute;
-  top : 120%;
+  //position: absolute;
+  //top : 120%;
+  margin-top: 58px;
   display: flex;
   flex-direction: column;
   justify-content: center;

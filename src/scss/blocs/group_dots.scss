@@ -1,15 +1,10 @@
-.groupDots {
-  height: 100%;
-  width: 100vw;
-  z-index: -1;
-}
-
 .groupDots__aspect {
   width: 11px;
   height: 11px;
   border-radius: 100%;
   position: absolute;
   top: 0;
+  z-index: -1;
 
   @media(min-width: 1000px) {
     width: 14px;
@@ -26,7 +21,7 @@
   background-color: transparent;
 }
 
-.purple--bigger {
+.purple--medium {
   width: 18px;
   height: 18px;
 
@@ -36,17 +31,42 @@
   }
 }
 
+.purple--bigger {
+  width: 30px;
+  height: 30px;
+
+  @media(min-width: 1000px) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
 .blue {
   background-color: $tertiary-color;
 }
 
-.blue--bigger {
+.blue--stroke {
+  border: 1px solid $tertiary-color;
+  background-color: transparent;
+}
+
+.blue--medium {
   width: 18px;
   height: 18px;
 
   @media(min-width: 1000px) {
     width: 23px;
     height: 23px;
+  }
+}
+
+.blue--bigger {
+  width: 30px;
+  height: 30px;
+
+  @media(min-width: 1000px) {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -56,70 +76,105 @@
 }
 
 .groupDots__two {
-  top: 70%;
-  left: 11%;
+  top: 82%;
+  left: 22%;
 }
 
 .groupDots__three {
-  top: 100%;
-  left: 19%;
+  top: 120%;
+  left: 85%;
 }
 
 .groupDots__four {
-  top: 30%;
+  top: 154%;
   left: 72%;
 }
 
 .groupDots__five {
-  top: 84%;
-  left: 84%;
+  top: 200%;
+  left: 24%;
+
+  @media(min-width: 1200px) {
+    top: 250%;
+  }
 }
 
 .groupDots__six {
-  top: 124%;
+  top: 244%;
   left: 52%;
+
+  @media(min-width: 1200px) {
+    top: 300%;
+  }
 }
 
 .groupDots__seven {
-  top: 158%;
-  left: 71%;
+  top: 280%;
+  left: 91%;
+
+  @media(min-width: 1200px) {
+    top: 320%;
+  }
 }
 
 .groupDots__height {
-  top: 187%;
-  left: 89%;
+  top: 308%;
+  left: 3%;
+
+  @media(min-width: 1200px) {
+    top: 350%;
+  }
 }
 
-.groupDots__nine {
-  top: 250%;
-  left: 69%;
+@media(min-width: 1200px) {
+  .groupDots__nine {
+    top: 420%;
+    left: 78%;
+  }
 }
 
-.groupDots__ten {
-  top: 270%;
-  left: 15%;
+@media(min-width: 1200px) {
+  .groupDots__ten {
+    top: 470%;
+    left: 55%;
+  }
 }
 
-.groupDots__eleven {
-  top: 170%;
-  left: 15%;
+@media(min-width: 1200px) {
+  .groupDots__eleven {
+    top: 490%;
+    left: 45%;
+  }
 }
 
 .groupDots__twelve {
-  top: 200%;
-  left: 20%;
+  top: 16%;
+  left: 78%;
 }
 
 .groupDots__thirteen {
-  top: 15%;
-  left: 80%
+  top: 49%;
+  left: 46%;
+
+  @media(min-width: 1200px) {
+    top: 74%;
+  }
 }
 
 .groupDots__fourteen {
-  top: 45%;
-  left: 63%;
+  top: 82%;
+  left: 80%;
 
   @media(min-width: 1200px) {
     top: 65%;
+  }
+}
+
+.groupDots__fifteen {
+  top: 110%;
+  left: 50%;
+
+  @media(min-width: 1200px) {
+    top: 180%;
   }
 }
