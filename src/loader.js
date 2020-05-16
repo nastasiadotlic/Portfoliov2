@@ -5,4 +5,4 @@ LOADER
 setTimeout(function() {
     document.location.href="screen/homepage.html";
     clearTimeout();
-}, 5000);
+}, 4000);
