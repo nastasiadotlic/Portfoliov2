@@ -1,6 +1,6 @@
 /**, *::after, *::before {
   cursor: none;
-}
+}*/
 
 .cursor__inner {	
 	z-index: 999999;
@@ -14,11 +14,32 @@
 .cursor__inner--dot {
 	width: 8px;
 	height: 8px;
-	background: #C0E9FF;
+	background-color: #C0E9FF;
 }
 
 .cursor__inner--circle {
 	width: 24px;
 	height: 24px;
-  border: 1px solid #C0E9FF;
-}*/
+	border: 1px solid;
+	border-color: #C0E9FF;
+}
+
+
+@media(max-width: 800px) {
+	.cursor__inner {
+		display: none;
+	} 
+
+	*, *::after, *::before {
+		cursor: auto;
+	} 
+}
+
+@media(min-width: 801px) {
+	.cursor__inner {
+		display: unset;
+	} 
+	*, *::after, *::before {
+		cursor: none;
+	}
+}

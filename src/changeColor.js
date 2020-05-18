@@ -11,6 +11,8 @@ var purple = "#C2BDFB";
 var transparent = "transparent";
 var currentColor = purple;
 var header = document.querySelector('.header');
+var innerDot = document.querySelector('.cursor__inner--dot');
+var innerCircle = document.querySelector('.cursor__inner--circle');
 
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
@@ -49,7 +51,9 @@ function ChangeColor(e) {
     for(k=0; k<textTransparent.length; k++) {
         textTransparent[k].style.webkitTextStrokeColor = currentColor;
     }
+
     header.style.borderBottomColor = currentColor;
+
     if (currentColor == blue) {
         header.style.borderBottomColor = "rgb(192, 233, 255, 0.2)";
     } else {
@@ -59,6 +63,16 @@ function ChangeColor(e) {
     for(i=0; i<dot.length; i++) {
         dot[i].style.animationPlayState = "paused";
     }
+
+    if (currentColor == blue) {
+        innerDot.style.backgroundColor = purple;
+        innerCircle.style.borderColor = purple;
+    } else {
+        innerDot.style.backgroundColor = blue;
+        innerCircle.style.borderColor = blue;
+    }
+    
+   
 
     localStorage.setItem('currentColor', currentColor);
     

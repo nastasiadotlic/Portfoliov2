@@ -7,6 +7,8 @@ var header = document.querySelector('.header');
 var blue = "#C0E9FF";
 var purple = "#C2BDFB";
 var svg = document.querySelector('.work__button--svg');
+var innerDot = document.querySelector('.cursor__inner--dot');
+var innerCircle = document.querySelector('.cursor__inner--circle');
 
 for(i=0; i<dot.length; i++) {
   dot[i].style.backgroundColor = currentColor;
@@ -37,4 +39,12 @@ if (currentColor == blue) {
   svg.setAttribute("fill", purple);
 }
 
-localStorage.clear();
+if (currentColor == blue) {
+  innerDot.style.backgroundColor = purple;
+  innerCircle.style.borderColor = purple;
+} else {
+  innerDot.style.backgroundColor = blue;
+  innerCircle.style.borderColor = blue;
+}
+
+//localStorage.clear();
