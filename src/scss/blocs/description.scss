@@ -82,7 +82,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: clip;
-  font-size: calc(18px + (66 - 18) * ((100vw - 320px) / (1200 - 320)));
+  font-size: calc(22px + (66 - 22) * ((100vw - 320px) / (1200 - 320)));
 }
 
 .description__skill--color {

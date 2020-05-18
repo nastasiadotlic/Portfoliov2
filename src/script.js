@@ -15,9 +15,6 @@ var rellax = new Rellax('.groupDots__height');
 var rellax = new Rellax('.groupDots__nine');
 var rellax = new Rellax('.groupDots__ten');
 var rellax = new Rellax('.groupDots__eleven');
-var rellax = new Rellax('.groupDots__twelve');
-var rellax = new Rellax('.groupDots__fifteen');
-var rellax = new Rellax('.groupDots__sixteen');
 
 /*
 CURSOR
