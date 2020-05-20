@@ -29,8 +29,6 @@ for(m=0; m<textTransparent.length; m++){
     }) 
 } 
 
-
-
 function ChangeColor(e) {
     if(currentColor == blue)
         currentColor = purple;
@@ -71,11 +69,7 @@ function ChangeColor(e) {
         innerDot.style.backgroundColor = blue;
         innerCircle.style.borderColor = blue;
     }
-    
-   
 
     localStorage.setItem('currentColor', currentColor);
-    
-
     
 }
