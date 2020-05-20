@@ -3,6 +3,6 @@ LOADER
 */
 
 setTimeout(function() {
-    document.location.pathname="../screen/homepage.html";
+    document.location.href="screen/homepage.html";
     clearTimeout();
 }, 4000);
