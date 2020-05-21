@@ -4,15 +4,15 @@ CHANGING COLOR
 
 var dot = document.querySelectorAll('.dot');
 var lines = document.querySelectorAll('.line');
-var textChange = document.querySelectorAll('.textChange');
-var textTransparent = document.querySelectorAll('.textTransparent');
-var blue = "#C0E9FF";
-var purple = "#C2BDFB";
-var transparent = "transparent";
-var currentColor = purple;
 var header = document.querySelector('.header');
 var innerDot = document.querySelector('.cursor__inner--dot');
 var innerCircle = document.querySelector('.cursor__inner--circle');
+var blue = "#C0E9FF";
+var purple = "#C2BDFB";
+var textTransparent = document.querySelectorAll('.textTransparent');
+var textChange = document.querySelectorAll('.textChange');
+var currentColor = localStorage.getItem('currentColor');
+
 
 for(i=0; i<dot.length; i++) {
     dot[i].addEventListener('click', ChangeColor);
