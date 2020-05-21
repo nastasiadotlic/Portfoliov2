@@ -9,5 +9,5 @@ var innerCircle = document.querySelector('.cursor__inner--circle');
 //var currentColor = purple;
 
 localStorage.setItem('currentColor', purple);
-innerDot.style.backgroundColor = currentColor == purple ? blue : purple;
-innerCircle.style.borderColor = currentColor == purple ? blue : purple;
+innerDot.style.backgroundColor = blue;
+innerCircle.style.borderColor = blue;
