@@ -9,18 +9,38 @@ var innerDot = document.querySelector('.cursor__inner--dot');
 var innerCircle = document.querySelector('.cursor__inner--circle');
 var blue = "#C0E9FF";
 var purple = "#C2BDFB";
+var transparent = "transparent";
 var textTransparent = document.querySelectorAll('.textTransparent');
 var textChange = document.querySelectorAll('.textChange');
 var currentColor = localStorage.getItem('currentColor');
+var descriptionSkill = document.querySelectorAll('.description__skill');
+var descriptionSkillColor = document.querySelectorAll('.description__skill--color');
 
+innerDot.style.backgroundColor = currentColor == purple ? blue : purple;
+innerCircle.style.borderColor = currentColor == purple ? blue : purple;
 
 for(i=0; i<dot.length; i++) {
+    dot[i].style.backgroundColor = currentColor;
     dot[i].addEventListener('click', ChangeColor);
 }
 
+for(l=0; l<descriptionSkill.length; l++) {
+    descriptionSkill[l].style.webkitTextStrokeColor = currentColor;
+}
+
+for(l=0; l<descriptionSkillColor.length; l++) {
+    descriptionSkillColor[l].style.color = currentColor;
+}
+
+
+for(j=0; j<textChange.length; j++) {
+    textChange[j].style.color = currentColor;
+}
+
 for(l=0; l<textTransparent.length; l++) {
+    textTransparent[l].style.webkitTextStrokeColor = currentColor;
     textTransparent[l].addEventListener("mouseenter", function() {
-        this.style.color = dot[0].style.backgroundColor ? dot[0].style.backgroundColor : purple;
+        this.style.color = dot[0].style.backgroundColor ? dot[0].style.backgroundColor : currentColor;
     }) 
 }
 for(m=0; m<textTransparent.length; m++){

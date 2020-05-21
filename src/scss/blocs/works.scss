@@ -96,7 +96,7 @@
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: $primary-color;
+  //-webkit-text-stroke-color: $primary-color;
   transition: color 0.5s ease-in-out;
 
   @media(min-width: 768px) {
