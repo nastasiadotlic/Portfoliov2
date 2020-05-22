@@ -8,3 +8,20 @@
   font-family: 'akzidenzgrotesk';
   src: url('../../../fonts/akzidenzgrotesk/AkzidenzGroteskBlack.ttf');
 }
+
+@font-face {
+  font-family: 'AkzidenzGrotesk';
+  src: url('AkzidenzGrotesk-Black.woff2') format('woff2'),
+      url('AkzidenzGrotesk-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Light.woff2') format('woff2'),
+      url('Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
