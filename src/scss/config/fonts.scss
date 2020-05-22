@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: 'AkzidenzGrotesk';
   src: url('../../../fonts/akzidenzgrotesk/AkzidenzGrotesk-Black.woff2') format('woff2'),
       url('../../../fonts/akzidenzgrotesk/AkzidenzGrotesk-Black.woff') format('woff');
@@ -12,4 +12,14 @@
       url('../../../fonts/roboto/Roboto-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'AkzidenzGrotesk';
+  src: url('/../fonts/akzidenzgrotesk/AkzidenzGroteskBlack.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/../fonts/roboto/Roboto-Light.ttf') format('truetype');
 }
