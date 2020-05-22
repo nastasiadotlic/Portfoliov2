@@ -29,7 +29,7 @@ body {
 
 .homepage__title {
   color: white;
-  font-family: 'AkzidenzGrotesk';
+  font-family: 'AkzidenzGrotesk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 60px;
 
@@ -76,7 +76,7 @@ body {
 }
 
 .homepage__subtitle {
-  font-family: 'Roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: lighter;
   color: $primary-color;
   font-size: 16px;
