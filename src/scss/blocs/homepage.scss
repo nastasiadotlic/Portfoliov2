@@ -49,7 +49,6 @@ body {
 .dot {
   width: 14px;
   height: 14px;
-  //background-color: $primary-color;
   border-radius: 100%;
   margin-bottom: 8px;
   margin-left: 10px;
@@ -96,33 +95,13 @@ body {
   }
 }
 
-.homepage__subtitle--second {
-  font-family: 'roboto';
-  font-weight: lighter;
-  color: white;
-  margin-top: 24px;
-
-  @media(min-width: 576px) {
-    font-size: 24px;
-  }
-
-  @media(min-width: 1200px) {
-    font-size: 32px;
-    margin-top: 32px;
-  }
-
-  @media(min-width: 1600px) {
-    font-size: 40px;
-  }
-}
-
 .scroll {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   color: white;
-  font-family: 'roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: lighter;
   margin-bottom: 10px;
 

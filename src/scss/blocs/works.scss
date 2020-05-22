@@ -23,7 +23,7 @@
 
 .works__title {
   color: $white-color;
-  font-family: 'akzidenzgrotesk';
+  font-family: 'AkzidenzGrotesk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 40px;
 
@@ -92,11 +92,10 @@
 }
 
 .textTransparent {
-  font-family: 'akzidenzgrotesk';
+  font-family: 'AkzidenzGrotesk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  //-webkit-text-stroke-color: $primary-color;
   transition: color 0.5s ease-in-out;
 
   @media(min-width: 768px) {

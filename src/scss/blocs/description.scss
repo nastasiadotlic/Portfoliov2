@@ -22,7 +22,7 @@
 
 .description__title {
   color: $white-color;
-  font-family: 'akzidenzgrotesk';
+  font-family: 'AkzidenzGrotesk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 40px;
 
@@ -38,7 +38,7 @@
 .description__text {
   color: $white-color;
   font-size: 18px;
-  font-family: 'roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: lighter;
   margin-top: 40px;
   width: 80%;
@@ -70,12 +70,11 @@
 }
 
 .description__skill {
-  font-family: 'akzidenzgrotesk';
+  font-family: 'AkzidenzGrotesk', Arial, Helvetica, sans-serif;
   margin-top: 16px;
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke-width: 0.5px;
-  //-webkit-text-stroke-color: $primary-color;
   width: 100vw;
   overflow: hidden;
   white-space: nowrap;
@@ -84,7 +83,6 @@
 }
 
 .description__skill--color {
-  //color: $primary-color;
   -webkit-text-stroke-width: 0px;
 }
 
@@ -124,6 +122,6 @@
   position: absolute;
   left: 40%;
   color: $white-color;
-  font-family: "roboto";
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
