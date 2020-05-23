@@ -62,18 +62,12 @@
     margin-bottom: 48px;
   }
 
+  @media(min-width: 992px){
+    padding-left: 10%;
+  }
+
   @media(min-width: 1200px) {
     margin-bottom: 74px;
-    margin-left: 10%;
-    padding-left: 0;
-  }
-}
-
-.project__image {
-  max-width: 47%;
-
-  @media(min-width: 1200px) {
-    min-width: 36%;
   }
 }
 
